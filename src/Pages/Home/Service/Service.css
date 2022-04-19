@@ -1,4 +1,15 @@
+.service-card {
+  height: 350px;
+  border: none;
+  background-color: rgba(171, 245, 151, 0.657);
+  box-shadow: 5px 5px 10px grey;
+}
+.card-container :hover {
+  transform: scale(1.05);
+  transition: all 1s ease-out;
+}
+
 .btn {
-  position: fixed;
+  position: absolute;
   bottom: 0px;
 }

@@ -6,8 +6,8 @@ const Service = (props) => {
   
   const {name,Popularity,balance,about}=props.service;
   return (
-    <div className="col ">
-      <div className="card">
+    <div className="col mb-4  ">
+      <div className="card p-3 service-card">
         <div className="card-body">
           <h5 className="card-title">{name}</h5>
           <p>
@@ -15,7 +15,9 @@ const Service = (props) => {
           </p>
           <h1>{balance}</h1>
           <p className="card-text">{about}</p>
-          <Button className='btn' variant="success">Success</Button>{" "}
+          <Button className='mx-auto my-3 btn' variant="success" size="lg">
+            Go To Checkout
+          </Button>
         </div>
       </div>
     </div>

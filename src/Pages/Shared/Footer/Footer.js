@@ -47,7 +47,7 @@ const Footer = () => {
             </div>
           </Col>
           <Col sm={12} lg={12}>
-            <p className="text-center copyright fw-bold my-5">
+            <p className="text-center copyright fw-bold mt-5">
               <small>
                 {new Date().getFullYear()} &copy;Relish.Designed by Eshrat Jahan
               </small>
