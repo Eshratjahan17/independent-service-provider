@@ -3,6 +3,8 @@ import { Form } from 'react-bootstrap';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
+import SocialMediaLogIN from '../SocialMediaLogIN/SocialMediaLogIN';
+import './Login.css';
 
 const Login = () => {
   const [email,setEmail]=useState('');
@@ -66,6 +68,7 @@ const Login = () => {
           Please SignUp
         </Link>
       </p>
+      <SocialMediaLogIN></SocialMediaLogIN>
     </div>
   );
 };

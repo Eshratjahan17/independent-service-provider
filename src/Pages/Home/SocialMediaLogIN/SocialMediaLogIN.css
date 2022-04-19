@@ -1,0 +1,15 @@
+.google-login img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.google-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #6cbda4;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 445px;
+}
