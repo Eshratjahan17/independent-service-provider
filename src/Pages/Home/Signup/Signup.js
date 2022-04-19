@@ -13,7 +13,7 @@ const Signup = () => {
   const [confirmPassword,setConfirmPassword]=useState("");
   const [error,setError]=useState("");
   const [createUserWithEmailAndPassword, user, loading] =
-    useCreateUserWithEmailAndPassword(auth);
+    useCreateUserWithEmailAndPassword(auth,{sendEmailVerification:true});
     const navigate=useNavigate();
 
   const handleName=(event)=>{
