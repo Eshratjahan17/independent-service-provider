@@ -1,6 +1,6 @@
 # Welcome to Relish Weddings
 
-This project was bootstrapped with [Create React App](https://independent-service-prov-d0bbd.web.app/).
+This project was bootstrapped with [Live site](https://independent-service-prov-d0bbd.web.app/).
 
 ## About my Website
 
