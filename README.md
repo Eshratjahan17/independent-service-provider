@@ -9,10 +9,18 @@ This project was bootstrapped with [Create React App](https://independent-servic
 - His Services and Packages pricing is shown here
 
 * Here is a blog section also
+* here is log in section for previous users and register section for new users to buy his pakages.
 
-In the project directory, you can run:
+### Technologies used in my project
 
-### `npm start`
+- React
+- React Router
+- Firebase
+- Bootstrap
+- React Bootstrap
+- Tostify
+- react Hooks
+- vanilla Css
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
