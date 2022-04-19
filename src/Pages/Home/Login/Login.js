@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Form } from 'react-bootstrap';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import SocialMediaLogIN from '../SocialMediaLogIN/SocialMediaLogIN';
 import './Login.css';
@@ -12,6 +12,9 @@ const Login = () => {
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
     const navigate=useNavigate();
+    const location = useLocation();
+    
+    const from = location.state?.from?.pathname || "/";
   const handleloginEmail=(event)=>{
     setEmail(event.target.value);
   }
@@ -24,7 +27,7 @@ const Login = () => {
 
   }
   if(user){
-    navigate('/home');
+    navigate(from,{replace:true});
   }
   return (
     <div className="container ">
@@ -50,12 +53,12 @@ const Login = () => {
           />
         </Form.Group>
         
-        <p className="text-danger">{}</p>
+        <p className="text-danger">{error?.message}</p>
 
         <input
           className="form-submit btn btn-success signup-btn "
           type="submit"
-          value="Sign Up"
+          value="Log In"
           required
         />
       </Form>
@@ -65,8 +68,9 @@ const Login = () => {
           to="/signup"
           className="text-primary pe-auto text-decoration-none "
         >
-          Please SignUp
+          Sign up
         </Link>
+
       </p>
       <SocialMediaLogIN></SocialMediaLogIN>
     </div>

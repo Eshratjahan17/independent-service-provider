@@ -86,7 +86,7 @@ const Signup = () => {
             required
           />
         </Form.Group>
-        <p className='text-danger'>{error}</p>
+        <p className='text-danger'>{error?.message}</p>
 
         <input
           className="form-submit btn btn-success signup-btn "

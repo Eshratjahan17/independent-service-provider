@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './Service.css';
 
 const Service = (props) => {
@@ -15,9 +16,11 @@ const Service = (props) => {
           </p>
           <h1>{balance}</h1>
           <p className="card-text">{about}</p>
-          <Button className='mx-auto my-3 btn' variant="success" size="lg">
-            Go To Checkout
-          </Button>
+          <Link to="/checkout">
+            <Button className="mx-auto my-3 btn" variant="success" size="lg">
+              Go To Checkout
+            </Button>
+          </Link>
         </div>
       </div>
     </div>
