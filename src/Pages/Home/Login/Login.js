@@ -1,7 +1,10 @@
+import { sendPasswordResetEmail } from 'firebase/auth';
 import React, { useState } from 'react';
 import { Form } from 'react-bootstrap';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import auth from '../../../firebase.init';
 import SocialMediaLogIN from '../SocialMediaLogIN/SocialMediaLogIN';
 import './Login.css';
@@ -26,13 +29,19 @@ const Login = () => {
     signInWithEmailAndPassword(email,password);
 
   }
+  const handleResetPassword=()=>{
+    sendPasswordResetEmail(auth,email)
+    .then(()=>{
+      toast('email sent');
+    })
+    
+  }
   if(user){
     navigate(from,{replace:true});
   }
   return (
     <div className="container ">
       <Form onSubmit={handlelogin} className="mx-auto w-50 py-5">
-
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
           <Form.Control
@@ -52,7 +61,7 @@ const Login = () => {
             required
           />
         </Form.Group>
-        
+
         <p className="text-danger">{error?.message}</p>
 
         <input
@@ -63,15 +72,24 @@ const Login = () => {
         />
       </Form>
       <p className="text-center">
-       New to Relish Weddings?
+        New to Relish Weddings?
         <Link
           to="/signup"
           className="text-primary pe-auto text-decoration-none "
         >
           Sign up
         </Link>
-
+        <p>
+          Forget Password?
+          <button
+            onClick={handleResetPassword}
+            className="forget-password-button text-primary"
+          >
+            Reset Password
+          </button>
+        </p>
       </p>
+      <ToastContainer></ToastContainer>
       <SocialMediaLogIN></SocialMediaLogIN>
     </div>
   );
