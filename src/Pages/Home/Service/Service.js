@@ -1,14 +1,15 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
+import { Button, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Service.css';
 
 const Service = (props) => {
   
-  const {name,Popularity,balance,about}=props.service;
+  const { name, Popularity, balance, about, picture } = props.service;
   return (
     <div className="col mb-4  ">
       <div className="card p-3 service-card">
+        <Card.Img style={{height:"200px",borderRadius:"10px"}} variant="top" src={picture} />
         <div className="card-body">
           <h5 className="card-title">{name}</h5>
           <p>

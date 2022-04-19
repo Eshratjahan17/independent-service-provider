@@ -1,8 +1,14 @@
-# Getting Started with Create React App
+# Welcome to Relish Weddings
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://independent-service-prov-d0bbd.web.app/).
 
-## Available Scripts
+## About my Website
+
+- My website is for a Wedding Photographer
+- It Contains About him
+- His Services and Packages pricing is shown here
+
+* Here is a blog section also
 
 In the project directory, you can run:
 
