@@ -1,0 +1,24 @@
+[
+  {
+    "id": "625e6c740d0071ac0f820bb5",
+    "name": "Basic",
+    "Popularity": "Low budget",
+
+    "balance": "$3,537/mo",
+    "about": " In order not to get a rude shock or underestimate your wedding photo prices, you should know some things.  \r\n"
+  },
+  {
+    "id": "625e6c74ae711ee083349615",
+    "name": "Standard",
+    "Popularity": "Most Popular",
+    "balance": "$3,194/mo",
+    "about": "A student will charge between $500- $1500, while a semi-pro will command a fee of $1000-$2500. \r\n"
+  },
+  {
+    "id": "625e6c7458e80e626bd3a108",
+    "name": "Premium",
+    "Popularity": "Best value",
+    "balance": "$3,771/mo",
+    "about": "A great understanding of the individual packages will save you lots of heartbreak.\r\n"
+  }
+]

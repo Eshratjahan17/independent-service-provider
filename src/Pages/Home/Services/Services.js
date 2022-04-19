@@ -1,9 +1,20 @@
 import React from 'react';
+import useData from '../../../Hooks/useData';
+import Service from '../Service/Service';
 
 const Services = () => {
+  const [services,setServices]=useData([]);
+  
   return (
-    <div>
-      <h1>this is service page</h1>
+    <div className='container'>
+      <h1 className='text-center'>Services</h1>
+      <div className="row row-cols-1 row-cols-lg-3 g-4 ">
+       
+          {services.map((service) => (
+            <Service key={service.id} service={service}></Service>
+          ))}
+       
+      </div>
     </div>
   );
 };
