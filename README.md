@@ -1,11 +1,11 @@
 # Welcome to Relish Weddings
 
-This project was bootstrapped with [Live site](https://independent-service-prov-d0bbd.web.app/).
+ [Live site](https://independent-service-prov-d0bbd.web.app/).
 
 ## About my Website
 
 - My website is for a Wedding Photographer
-- It Contains About him
+- It Contains About Photographer
 - His Services and Packages pricing is shown here
 
 * Here is a blog section also
